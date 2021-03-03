@@ -1,0 +1,905 @@
+/*================================
+        WEBSITE TEMPLATE
+=================================*/
+
+body
+{
+    font-family: Trebuchet MS, Arial;
+    font-size: 85%;
+    margin: 0;
+    padding: 0 0px 0 0px;
+    width: 99%;
+    height: 100%;
+}
+
+h4
+{
+    color: Red;
+    font: bold 10pt "Segoe UI"; 
+    text-shadow:1px 1px 1px yellow;
+}
+
+@font-face
+{
+    font-family: Fontin Sans;
+    src: url('Fonts/Fontin.otf');
+}
+
+@font-face
+{
+    font-family: Colaborate-Regular;
+    src: url('Fonts/ColabReg.otf');
+}
+
+#container
+{
+    background-color: rgb(230, 255, 191);
+    width: 1000px;
+    padding: 1px 3px 3px 3px;
+    height: 100%;
+}
+
+#header
+{
+    width: 100%;
+    background-image: url(    ' Images/logo_bg.gif' );
+    background-repeat: repeat-x;
+    padding-bottom: 5px;
+}
+
+#footer
+{
+    height: 45px;
+    background: url(    ' Images/footer_bg.gif' ) repeat-x;
+    padding: 10px 5px 0 5px;
+    margin-top: 5px;
+    color: #463E3F;
+    font-weight: bold;
+    font-size: 98%;
+}
+
+.leftCol
+{
+    float: left;
+    width: 17%;
+    padding-left: 2px;
+}
+
+.rightCol
+{
+    float: right;
+    width: 82%;
+    padding-right: 1px;
+}
+
+/*===================================
+    CONTENT PLACEHOLDER STYLES
+====================================*/
+.greenLeft
+{
+    background-image: url(   'Images/gr_curve_left.gif' );
+    background-repeat: no-repeat;
+    height: 23px;
+    width: 6px;
+}
+
+.greenMiddle
+{
+    background-image: url('Images/gr_table_bg.gif');
+    background-repeat: repeat-x;
+    height: 23px;
+    vertical-align: middle;
+    text-align: left;
+    color: White;
+    font-weight: bold;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.greenRight
+{
+    background-image: url(   'Images/gr_curve_right.gif' );
+    background-repeat: no-repeat;
+    height: 23px;
+    width: 138px;
+}
+
+.padLeft
+{
+    padding-left: 22px;
+}
+
+.cphImg
+{
+    background: url('Images/chapter.png') no-repeat bottom left;
+    width: 30px;
+    font-family: Trebuchet MS;
+}
+
+.cphGrayBox
+{
+    min-height: 450px;
+    padding: 5px 5px 5px 5px;
+    background: url("Images/grey-bg.gif") repeat-x scroll 0 0;
+    border: 1px solid #E0E0E0;
+    font-family: Colaborate-Regular,Verdana, Arial;
+    font-size: 11pt;
+    color: #463E3F;
+    line-height: 1.4em;
+}
+
+/*====================================
+    CHILD PAGES STYLE
+=====================================*/
+
+.clHead
+{
+    color: #3366CC;
+    font: bold 12pt "Segoe UI"; 
+    line-height:20px;
+    text-shadow: 1px 1px 1px #FAFAFA;   
+}
+
+.pageHeader
+{
+    font-family: "Fontin Sans" ,Calibri,Candara;
+    font-size: 1.8em;
+    padding: 3px 0 10px 2px;
+    color: #463E3F;
+    font-weight: bold;
+}
+
+.pageSubHeader
+{
+    font-family: "Fontin Sans" ,Candara,Calibri;
+    font-size: 10.5pt;
+    background-position: 5px 2px;
+    background-repeat: no-repeat;
+    line-height: 15px;
+    padding: 2px 2px 2px 30px;
+    margin-bottom: 1px;
+}
+
+.pageSubHeader.acl
+{
+    background-image: url("Images/arrow-curve.png");
+}
+
+
+.Information
+{
+    background-color: #E5F7D5;
+    border: 1px solid #5AAD0D;
+}
+
+.subHdrPara
+{
+    padding: 2px 2px 2px 2px;
+}
+
+.code
+{
+    background: none repeat scroll 0 0 #FAFAFA;
+    border-color: #F2F2F2 #F2F2F2 #F2F2F2 #4284B0;
+    border-style: solid;
+    border-width: 1px 1px 1px 4px;
+    display: block;
+    font: normal 13px Consolas;
+    margin: 5px 0;
+    overflow: auto;
+    padding: 10px;
+    text-align: left;
+    color: rgb(20, 49, 84);
+}
+
+a
+{
+    text-decoration: none;
+    color: Blue;
+}
+
+a:hover
+{
+    color: Red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.anch
+{
+    font-size: 95%;
+    font-weight: bold;
+    color: Gray;
+    padding-top: 3px;
+    padding-right: 3px;
+}
+
+.anchor
+{
+    text-decoration: none;
+    color: Gray;
+}
+
+.anchor:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #463E3F;
+}
+
+.li_nospace
+{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.logotable
+{
+    height: 75px;
+    background-image: url(     'Images/logo_bg.gif' );
+}
+
+.inform
+{
+    background: url('Images/inform.gif' ) repeat-x;
+    text-align: center;
+    border: 1px solid orange;
+    padding: 3px 5px 3px 5px;
+    width: 60%;
+    height: 15px;
+    font-family: Consolas;
+}
+.cph
+{
+    height: 400px;
+    min-height: 400px;
+    padding-top: 5px;
+    max-height: 410px;
+    overflow: auto;
+}
+
+div.hideSkiplink
+{
+    background-color: rgb(195, 217, 255); /*Blue color*/
+    width: 100%;
+    height: 33px;
+}
+
+.footInfo
+{
+    font-family: Consolas;
+    font-size: 11px;
+    color: Blue;
+}
+
+.time
+{
+    padding-top: 8px;
+    color: #463E3F;
+}
+
+.imgNoBorder
+{
+    border: none;
+}
+
+.divBorder
+{
+    border: 1px solid rgb(230, 255, 191);
+    padding: 2px 2px 2px 2px;
+    background-color: rgb(195, 217, 255);
+    margin: 10px 0 0 7px;
+}
+
+.fritz
+{
+    background: url('Images/fritz-onion-v2.png') no-repeat left center;
+    min-height: 130px;
+    padding: 2px 4px 2px 2px;
+    text-align: justify;
+}
+
+.keith
+{
+    background: url('Images/keith-brown-v2.png') no-repeat left center;
+    min-height: 130px;
+    padding: 2px 4px 2px 2px;
+    text-align: justify;
+}
+
+.bgGreen
+{
+    background-color: rgb(230, 255, 191);
+}
+
+.bgYellow
+{
+    background-color: rgb(255, 243, 175);
+}
+
+.paraPadding
+{
+    padding: 1px 1px 1px 100px;
+}
+
+input[type="submit"]
+{
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: rgb(230, 255, 191);
+    border: 1px solid rgb(230, 255, 191);    
+    color: #000;
+    font: normal 12px "Segoe UI";
+    -moz-border-radius: 4px;
+    box-shadow: 0 1px 3px black;
+    width: auto;
+    overflow: visible;
+    height: 20px;
+    line-height: 30px;
+    padding:0px 5px 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px yellow;    
+    cursor: pointer;
+}
+
+input[type="text"]
+{
+    font: normal 8.5pt Verdana;
+    border: 1px solid rgb(51, 102, 204);
+    height: 17px;
+    padding: 0 2px 0 2px;
+    width: 200px;
+    color: #463E3F;
+}
+
+input[type="password"]
+{
+    font: normal 8.5pt Verdana;
+    border: 1px solid rgb(51, 102, 204);
+    height: 17px;
+    padding: 0 2px 0 2px;
+    width: 200px;
+    color: #463E3F;
+}
+
+/*=================================
+         GRIDVIEW STYLE
+=================================== */
+.grid
+{
+    border: 1px solid #A3C3EA;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    background-color: #FFFFFF;
+}
+
+.grid input[type=text]
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    background-color: #bedafe;
+}
+
+.grid textArea
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    background-color: #FFF3AF;
+}
+
+.grid select
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    background-color: rgb(230, 255, 191);
+}
+
+.gridheader
+{
+    background: url("Images/bluebg.gif") repeat-x scroll 0 0 transparent;
+    border-bottom: 1px solid #A3C3EA;
+    height: 24px;
+}
+
+.gridEdit
+{
+    background-color: transparent;
+}
+
+.gridEdit input[type=text]
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    background-color: #E6E6E6;
+}
+
+.gridEdit select
+{
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    background-color: #E6E6E6;
+}
+
+/*------ To add padding to gridview header and row --------*/
+.grid td
+{
+    padding: 0px 4px 0px 4px;
+}
+
+.gridheader th
+{
+    padding: 0px 3px 0px 3px;
+}
+
+.dlist
+{
+    border: 1px solid #A3C3EA;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    background-color: #FFFFFF;
+}
+
+.dlist td
+{
+    padding: 4px 4px 4px 4px;
+}
+
+/*=================================
+         TREEVIEW STYLE
+=================================== */
+.treeView
+{
+    font: 12px Verdana,Arial,Helvetica,sans-serif;
+    font-style: normal;
+    background-color: #FFFFFF;
+    cursor: default;
+    padding: 3px 3px 3px 3px;
+}
+
+.node
+{
+    font: 12px/18px "Segoe UI" ,Arial,sans-serif;
+    margin: 2px 2px 2px 2px;
+    height: 10px;
+    color: #000000;
+}
+
+.node a
+{
+    text-decoration: none;
+}
+
+.leafNode
+{
+    margin: 4px 4px 4px 4px;
+}
+
+.nodeHover
+{
+    border: 1px solid #99DEFD;
+    background: #EFF7FD url('Images/office_blue.gif');
+}
+
+.nodeHover a
+{
+    text-decoration: none;
+    color: #363636;
+}
+
+/*=================================
+         WIZARD STYLE
+=================================== */
+
+.wizard
+{
+    font:normal 8.5pt Verdana;   
+    border:1px solid #504f4f;
+    margin:4px;  
+    background:#bedafe; 
+}
+
+.wizard table
+{
+    padding:5px;
+}
+
+/*=======================================
+      USER CONTROL SIDE MENU HEADER
+=========================================*/
+
+.Left
+{
+    background-image: url(   'Images/isadminTL.gif' );
+    background-repeat: no-repeat;
+    height: 23px;
+    width: 3px;
+}
+
+.Middle
+{
+    background-image: url('Images/IsadminBG.gif');
+    background-repeat: repeat-x;
+    height: 23px;
+    vertical-align: middle;
+    text-align: left;
+    color: White;
+    font-weight: bold;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.Right
+{
+    background-image: url(   'images/IsadminRL.gif' );
+    background-repeat: no-repeat;
+    height: 23px;
+    margin-left: 25px;
+    width: 6px;
+}
+
+/*==============================================
+      USER CONTROL SIDE MENU LINKS SUNSET STYLE
+================================================*/
+.telerikContent
+{
+    padding: 3px 8px 5px 8px;
+    font-family: Verdana, Arial;
+    font-size: 8.5pt;
+    color: #393939;
+}
+
+.telerikMenuBg
+{
+    border: 1px solid Gray;
+    background-color: #BBD9FF;
+    height: 400px;
+    width: 100%;
+}
+
+.telerikMenu
+{
+    white-space: nowrap;
+    float: left;
+    position: relative;
+    text-align: left;
+    border: 0;
+    width: 100%;
+}
+
+.telerikMenu .rmRootGroup
+{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 0;
+    display: none;
+    width: 100%;
+}
+
+* html .telerikMenu .rmRootGroup
+{
+    float: left;
+}
+
+.telerikMenu ul.rmVertical, .telerikMenu ul.rmHorizontal
+{
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: relative;
+    left: 0;
+    float: left;
+}
+
+.telerikMenu .rmItem
+{
+    float: left;
+    position: relative;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style: none;
+}
+
+* html .telerikMenu .rmItem
+{
+    display: inline;
+}
+
+.telerikMenu .rmHorizontal .rmItem
+{
+    clear: none;
+}
+
+.telerikMenu .rmVertical .rmItem
+{
+    clear: both;
+}
+
+.telerikMenu ul.rmRootGroup
+{
+    display: block;
+    width: 100%;
+}
+
+.telerikMenu .rmText
+{
+    display: block;
+    width: 140px; /* 100% (by default) Width of hovering: 140px;*/
+}
+
+.telerikMenu a.rmLink
+{
+    cursor: default;
+    display: block;
+}
+
+.telerikMenu .rmLink
+{
+    width: 100%; /*Blue background*/
+}
+
+.telerikMenu div.rmRootGroup
+{
+    position: relative;
+}
+
+.telerikMenu .rmItem
+{
+    padding: 0;
+}
+
+.telerikMenu .rmLink
+{
+    padding: 2px 0 0 12px;
+    outline: 0;
+    float: left;
+}
+
+/* optimized for 16x16 */
+.telerikMenu .rmLeftImage
+{
+    margin: 4px 2px 0 -3px;
+    padding-bottom: 4px;
+}
+
+.telerikMenu .rmVertical .rmLeftImage + .rmText
+{
+    padding: 0 8px 1px 24px;
+}
+
+.telerikMenu .rmVertical .rmText
+{
+    padding: 0 15px 1px 0;
+}
+
+.telerikMenu .rmHorizontal .rmText
+{
+    padding: 0 12px 1px 0;
+}
+
+.telerikMenu .rmVertical .rmText
+{
+    display: block;
+    float: none;
+}
+
+.telerikMenu .rmVertical .rmLink
+{
+    float: none;
+}
+
+* html .telerikMenu .rmGroup .rmVertical .rmLink, * html .telerikMenu .rmGroup .rmHorizontal .rmLink
+{
+    float: left;
+}
+
+.telerikMenu .rmHorizontal .rmText
+{
+    padding: 0 11px 0 10px;
+}
+
+/*-------------------------------------------
+           TELERIK SUNSET
+--------------------------------------------*/
+
+.sideMenuBg
+{
+    border: 1px solid #E0E0E0;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.sideMenu_Sunset .rmRootGroup, .sideMenu_Sunset a.rmLink, .sideMenu_Sunset .rmText, .sideMenu_Sunset a.rmLinks
+{
+    background-image: url('Images/Sunset.jpg');
+    background-color: transparent;
+}
+
+.sideMenu_Sunset .rmRootGroup
+{
+    /* border: 1px solid #828282;*/
+    background-repeat: repeat-x;
+    background-position: 0 500px;
+    background-color: White;
+}
+
+.sideMenu_Sunset, .sideMenu_Sunset a.rmLink
+{
+    font: normal 12px/23px "Segoe UI" , Arial, sans-serif;
+    color: #000000;
+    text-decoration: none;
+}
+
+.sideMenu_Sunset a.rmLink, .sideMenu_Sunset .rmText
+{
+    background-position: 0 500px;
+    background-repeat: no-repeat;
+}
+
+.sideMenu_Sunset a.rmLink:hover
+{
+    color: #000;
+    background-position: 0 -166px;
+    cursor: pointer;
+}
+
+.sideMenu_Sunset a.rmLink:hover .rmText
+{
+    background-color: #FFFFFF;
+    background-position: 100% -192px;
+}
+
+/*-------------------------------------------
+            SELECTED MENU
+-------------------------------------------*/
+
+.sideMenu_Sunset a.rmLinks
+{
+    width: 100%;
+    padding: 2px 0 0 12px;
+    outline: 0;
+    float: left;
+    color: Black;
+    text-decoration: none;
+    background-position: 0 -166px;
+}
+
+.sideMenu_Sunset a.rmLinks .rmText
+{
+    background-color: #FFFFFF;
+    background-position: 100% -192px;
+}
+
+/*====================================
+                LOGIN PAGE
+=====================================*/
+
+.padBottom
+{
+    padding-bottom: 25px;
+}
+
+.loginImg
+{
+    background: url('Images/login-lock.png') no-repeat bottom left;
+    width: 30px;
+    font-family: Trebuchet MS;
+}
+
+.padLeft
+{
+    padding-left: 30px;
+}
+
+.iboxLC
+{
+    background-image: url(   'images/gray_left_curve.gif' );
+    background-repeat: no-repeat;
+    height: 6px;
+    background-position: left bottom;
+}
+
+.iboxTL
+{
+    background-image: url(   'images/gray_top_bgline.gif' );
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 6px;
+    background-position: center bottom;
+}
+
+.iboxRC
+{
+    background-image: url(   'images/gray_right_curve.gif' );
+    background-repeat: no-repeat;
+    height: 6px;
+    background-position: left bottom;
+}
+
+.iboxRL
+{
+    background-image: url(   'images/gray_right_bgline.gif' );
+    background-repeat: repeat;
+    width: 6px;
+    padding-right: 6px;
+}
+
+.iboxLL
+{
+    background-image: url(   'images/gray_left_bgline.gif' );
+    background-repeat: repeat;
+    width: 6px;
+    padding-left: 6px;
+}
+
+.iboxBG
+{
+    background-color: #FAFFF7;
+    height: auto;
+    margin: 2px 2px 2px 2px;
+    padding-top: 15px;
+}
+
+.iboxBLC
+{
+    background-image: url(   'images/gray_botleft_curve.gif' );
+    background-repeat: no-repeat;
+    height: 6px;
+    background-position: left bottom;
+}
+
+.iboxBRC
+{
+    background-image: url(   'images/gray_botright_curve.gif' );
+    background-repeat: no-repeat;
+    height: 6px;
+    background-position: left bottom;
+}
+
+.iboxBL
+{
+    background-image: url(   'images/gray_bot_bgline.gif' );
+    background-repeat: repeat-x;
+}
+
+/*=====================================
+        MISCELLANEOUS
+======================================*/
+.admImg
+{
+    border: none;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.pnlImg
+{
+    background: url("Images/c2f.png");
+}
+
+.check
+{
+    display: none;
+}
+
+.title
+{
+    color: #00156E;
+    font: normal bold 12px Treuchet MS;
+}

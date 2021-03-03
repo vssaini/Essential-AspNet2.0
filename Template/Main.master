@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Template_Main" %>
+
+<%@ Register Src="~/UserControls/SideMenu.ascx" TagName="sidemenu" TagPrefix="side" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="Stylesheet" href="~/Styles/General.css" type="text/css" />
+    <link rel="Shortcut Icon" href="~/favicon.ico" />
+    <title>Essential Asp.Net 2.0 - My Learning</title>
+    <asp:ContentPlaceHolder ID="cphHeader" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="masterBody" runat="server">
+    <form id="master" runat="server">
+    <div id="container">
+        <div id="header">
+            <%--HEADER--%>
+            <table class="logotable" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                    <tr>
+                        <td style="padding-top: 5px;" align="left" valign="top" width="3%">
+                            <a href="<%=VirtualPathUtility.ToAbsolute("~")%>/Default.aspx">
+                                <img class="imgNoBorder" src="<%=VirtualPathUtility.ToAbsolute("~")%>/Images/logo.png"
+                                    alt="" height="65" /></a>
+                        </td>
+                        <td style="padding-top: 5px;" class="headerText" align="left" valign="middle" width="10%">
+                            <a href="<%=VirtualPathUtility.ToAbsolute("~")%>/Default.aspx">
+                                <img class="imgNoBorder" src="<%=VirtualPathUtility.ToAbsolute("~")%>/Images/header.bmp"
+                                    alt="Rajasthan State Office" /></a>
+                        </td>
+                        <td style="padding-top: 5px;" align="right" valign="top" class="time anch" width="57%">
+                            <span style="color: #3399FF;">
+                                <asp:Label ID="lblEmployee" runat="server" Text="Hello, V.S.Saini" /></span>
+                            | <a class="anchor" href="<%=VirtualPathUtility.ToAbsolute("~")%>/Pages/AboutUs.aspx">
+                                About Us</a> | <a class="anchor" href="<%=VirtualPathUtility.ToAbsolute("~")%>/Pages/Intercom.aspx">
+                                    Contact Us</a> | <a class="anchor" href="<%=VirtualPathUtility.ToAbsolute("~")%>/Pages/Help.aspx">
+                                        Help</a>
+                            <div style="margin-top: 23px;" class="time">
+                                <asp:Label ID="lblDate" runat="server" />
+                                <label id="lblTime">
+                                    10:10:10 AM
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="clear">
+        </div>
+        <div style="min-height: 400px; width: 100%">
+            <%--LEFT VERTICAL MENU--%>
+            <div class="leftCol">
+                <side:sidemenu ID="sideMenu" runat="server" />
+                <asp:HiddenField ID="hfMenu" runat="server" Value="Dashboard" EnableViewState="true" />
+            </div>
+            <%--RIGHT SIDE--%>
+            <div class="rightCol">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <td class="greenLeft">
+                            </td>
+                            <td class="greenMiddle">
+                                <span class="cphImg" /><span class="padLeft">
+                                    <asp:Label ID="lblHeader" runat="server">Dashboard - Overview of book</asp:Label>
+                                </span>
+                            </td>
+                            <td class="greenRight">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="cphGrayBox">
+                    <asp:Panel ID="pnlSection" runat="server" Visible="false">
+                        <strong>****** Welcome to Saini classes ******</strong></asp:Panel>
+                    <asp:ContentPlaceHolder ID="cphMaster" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <%--FOOTER--%>
+            <div id="footer">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                &#169; 2012-2013 Saini Softwares Pvt. Ltd. All rights reserved.<br />
+                                <span class="footInfo">(Best viewed in Mozilla Firefox 3.6 & IE 7.0 with screen resolution
+                                    1024 x 768)</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </form>
+    <script type="text/javascript" defer="defer" src="<%= ResolveClientUrl("~/Script/General.js") %>"></script>
+</body>
+</html>
